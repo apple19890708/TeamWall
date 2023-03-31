@@ -33,7 +33,7 @@ const rules = computed(() => ({
   password: {
     required: helpers.withMessage('密碼必填', required),
     alphaNum: helpers.withMessage(
-      '密碼需至少 8 碼以上，並英數混合',
+      '密碼需至少 8 碼以上，並英數混合!',
       helpers.regex(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/, /\d/)
     ),
   },

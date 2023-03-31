@@ -21,6 +21,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:apple19890708/TeamWall.git main:gh-pages
+git remote add origin https://github.com/apple19890708/TeamWall.git
+git push -f origin main:gh-pages
 
 cd -
