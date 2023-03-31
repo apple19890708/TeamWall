@@ -54,6 +54,7 @@ const signIn = async () => {
     .then((res) => {
       userStore.updateUser(res.data.data);
       roomStore.updateRoom([]);
+      console.log('123');
       localStorage.setItem('metaWall', res.headers.authorization);
       resetData();
       router.push({ name: 'posts' });
