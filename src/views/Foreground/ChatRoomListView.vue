@@ -24,7 +24,7 @@ const queryRoomList = async () => {
     } = res;
     if (status) {
       Object.assign(chatList, chatRecord);
-      // console.log('chatList', chatList);
+      console.log('chatList', chatList);
     }
   } catch (error) {
     const msg = error.response.data?.message;
